@@ -1,0 +1,9 @@
+# Both encounters on the first floor can be won with plain attacks.
+goto map.gallery 10,9
+move up
+auto
+assert-flag flag.crawler_beaten true
+goto map.gallery 10,5
+move up
+auto
+assert-flag flag.wisp_beaten true

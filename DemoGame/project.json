@@ -1,0 +1,2496 @@
+{
+  "id": "game.demo90",
+  "title": "90s Demo",
+  "revision": 306,
+  "startMapId": "map.gallery",
+  "startEventId": "",
+  "startX": 10,
+  "startY": 13,
+  "playerSpriteId": "sprite.hero",
+  "uiThemeId": "",
+  "startMoney": 40,
+  "partyActorIds": [
+    "actor.vera"
+  ],
+  "render": {
+    "virtualWidth": 256,
+    "virtualHeight": 224,
+    "tileSize": 16,
+    "limitPalette": true,
+    "maxColors": 64,
+    "integerScale": true,
+    "crtFilter": true,
+    "warpTransition": "iris",
+    "showDayClock": false,
+    "titleImage": "",
+    "titleVfxId": "",
+    "language": "en"
+  },
+  "variables": [
+    {
+      "id": "flag.intro_done",
+      "kind": "Flag",
+      "default": "false"
+    },
+    {
+      "id": "flag.crawler_beaten",
+      "kind": "Flag",
+      "default": "false"
+    },
+    {
+      "id": "flag.wisp_beaten",
+      "kind": "Flag",
+      "default": "false"
+    },
+    {
+      "id": "flag.warden_beaten",
+      "kind": "Flag",
+      "default": "false"
+    }
+  ],
+  "tilesets": [
+    {
+      "id": "tileset.tower",
+      "image": "generated",
+      "tileSize": 16,
+      "animMs": 300,
+      "tiles": [
+        {
+          "id": 0,
+          "name": "stone floor",
+          "solid": false,
+          "color": "#565a6e",
+          "tint": "",
+          "frames": []
+        },
+        {
+          "id": 1,
+          "name": "tower wall",
+          "solid": true,
+          "color": "#23232f",
+          "tint": "",
+          "frames": []
+        },
+        {
+          "id": 2,
+          "name": "carpet",
+          "solid": false,
+          "color": "#7e3540",
+          "tint": "",
+          "frames": []
+        },
+        {
+          "id": 3,
+          "name": "pillar",
+          "solid": true,
+          "color": "#3a3a4c",
+          "tint": "",
+          "frames": []
+        },
+        {
+          "id": 4,
+          "name": "stairs",
+          "solid": false,
+          "color": "#c9b45a",
+          "tint": "",
+          "frames": []
+        },
+        {
+          "id": 5,
+          "name": "crystal seam",
+          "solid": true,
+          "color": "#2f4a97",
+          "tint": "",
+          "frames": []
+        }
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "id": "map.gallery",
+      "name": "The Flooded Gallery",
+      "tilesetId": "tileset.tower",
+      "width": 20,
+      "height": 15,
+      "tiles": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "tileFlags": [],
+      "warps": [
+        {
+          "x": 9,
+          "y": 1,
+          "toMapId": "map.vault",
+          "toX": 9,
+          "toY": 12,
+          "transition": "spiral"
+        },
+        {
+          "x": 10,
+          "y": 1,
+          "toMapId": "map.vault",
+          "toX": 10,
+          "toY": 12,
+          "transition": "spiral"
+        }
+      ],
+      "eventIds": [
+        "event.pell",
+        "event.intro",
+        "event.crawler",
+        "event.wisp"
+      ],
+      "songId": "song.tower",
+      "weatherVfxId": "vfx.rain"
+    },
+    {
+      "id": "map.vault",
+      "name": "The Crystal Vault",
+      "tilesetId": "tileset.tower",
+      "width": 20,
+      "height": 15,
+      "tiles": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "tileFlags": [],
+      "warps": [
+        {
+          "x": 9,
+          "y": 13,
+          "toMapId": "map.gallery",
+          "toX": 9,
+          "toY": 2,
+          "transition": "spiral"
+        },
+        {
+          "x": 10,
+          "y": 13,
+          "toMapId": "map.gallery",
+          "toX": 10,
+          "toY": 2,
+          "transition": "spiral"
+        }
+      ],
+      "eventIds": [
+        "event.warden"
+      ],
+      "songId": "song.tower",
+      "weatherVfxId": "vfx.vault_mist"
+    }
+  ],
+  "events": [
+    {
+      "id": "event.pell",
+      "mapId": "map.gallery",
+      "name": "Pell",
+      "kind": "Npc",
+      "x": 4,
+      "y": 7,
+      "sprite": "sprite.merchant",
+      "routineId": "look_around",
+      "pages": [
+        {
+          "id": "default",
+          "conditions": [],
+          "commands": [
+            {
+              "kind": "Dialogue",
+              "targetId": "dialogue.pell",
+              "value": ""
+            },
+            {
+              "kind": "OpenShop",
+              "targetId": "shop.pell",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "tint": "",
+      "solid": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 0
+    },
+    {
+      "id": "event.intro",
+      "mapId": "map.gallery",
+      "name": "Arrival",
+      "kind": "Trigger",
+      "x": 10,
+      "y": 12,
+      "sprite": "",
+      "routineId": "idle",
+      "pages": [
+        {
+          "id": "play",
+          "conditions": [
+            {
+              "variableId": "flag.intro_done",
+              "equalsValue": "false"
+            }
+          ],
+          "commands": [
+            {
+              "kind": "ShowEmote",
+              "targetId": "player",
+              "value": "puntos:1.4"
+            },
+            {
+              "kind": "Wait",
+              "targetId": "",
+              "value": "0.9"
+            },
+            {
+              "kind": "PanCamera",
+              "targetId": "event.pell",
+              "value": "1.1"
+            },
+            {
+              "kind": "Wait",
+              "targetId": "",
+              "value": "0.5"
+            },
+            {
+              "kind": "PanCamera",
+              "targetId": "player",
+              "value": "0.9"
+            },
+            {
+              "kind": "Dialogue",
+              "targetId": "dialogue.intro",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "done",
+          "conditions": [
+            {
+              "variableId": "flag.intro_done",
+              "equalsValue": "true"
+            }
+          ],
+          "commands": []
+        }
+      ],
+      "tint": "",
+      "solid": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 0
+    },
+    {
+      "id": "event.crawler",
+      "mapId": "map.gallery",
+      "name": "Rust Crawler",
+      "kind": "Trigger",
+      "x": 10,
+      "y": 8,
+      "sprite": "sprite.crawler",
+      "routineId": "pace_horizontal",
+      "pages": [
+        {
+          "id": "fight",
+          "conditions": [],
+          "commands": [
+            {
+              "kind": "ShowEmote",
+              "targetId": "player",
+              "value": "!:1.0"
+            },
+            {
+              "kind": "PlaySfx",
+              "targetId": "sfx.alerta",
+              "value": ""
+            },
+            {
+              "kind": "Battle",
+              "targetId": "battle.crawler",
+              "value": ""
+            },
+            {
+              "kind": "GiveMoney",
+              "targetId": "",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "id": "gone",
+          "conditions": [
+            {
+              "variableId": "flag.crawler_beaten",
+              "equalsValue": "true"
+            }
+          ],
+          "commands": []
+        }
+      ],
+      "tint": "",
+      "solid": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 0
+    },
+    {
+      "id": "event.wisp",
+      "mapId": "map.gallery",
+      "name": "Mire Wisp",
+      "kind": "Trigger",
+      "x": 10,
+      "y": 4,
+      "sprite": "sprite.wisp",
+      "routineId": "look_around",
+      "pages": [
+        {
+          "id": "fight",
+          "conditions": [],
+          "commands": [
+            {
+              "kind": "PlayVfx",
+              "targetId": "vfx.shatter",
+              "value": "player"
+            },
+            {
+              "kind": "Battle",
+              "targetId": "battle.wisp",
+              "value": ""
+            },
+            {
+              "kind": "GiveMoney",
+              "targetId": "",
+              "value": "14"
+            }
+          ]
+        },
+        {
+          "id": "gone",
+          "conditions": [
+            {
+              "variableId": "flag.wisp_beaten",
+              "equalsValue": "true"
+            }
+          ],
+          "commands": []
+        }
+      ],
+      "tint": "",
+      "solid": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 0
+    },
+    {
+      "id": "event.warden",
+      "mapId": "map.vault",
+      "name": "Crystal Warden",
+      "kind": "Trigger",
+      "x": 10,
+      "y": 4,
+      "sprite": "sprite.warden",
+      "routineId": "guard",
+      "pages": [
+        {
+          "id": "fight",
+          "conditions": [],
+          "commands": [
+            {
+              "kind": "ShowEmote",
+              "targetId": "player",
+              "value": "!:1.2"
+            },
+            {
+              "kind": "PanCamera",
+              "targetId": "event.warden",
+              "value": "1.0"
+            },
+            {
+              "kind": "Wait",
+              "targetId": "",
+              "value": "0.5"
+            },
+            {
+              "kind": "Dialogue",
+              "targetId": "dialogue.warden",
+              "value": ""
+            },
+            {
+              "kind": "PanCamera",
+              "targetId": "player",
+              "value": "0.7"
+            },
+            {
+              "kind": "Battle",
+              "targetId": "battle.warden",
+              "value": ""
+            },
+            {
+              "kind": "ShowItemGet",
+              "targetId": "item.shard",
+              "value": "1"
+            },
+            {
+              "kind": "GiveMoney",
+              "targetId": "",
+              "value": "45"
+            },
+            {
+              "kind": "Dialogue",
+              "targetId": "dialogue.after",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "done",
+          "conditions": [
+            {
+              "variableId": "flag.warden_beaten",
+              "equalsValue": "true"
+            }
+          ],
+          "commands": [
+            {
+              "kind": "Dialogue",
+              "targetId": "dialogue.warden_done",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "tint": "",
+      "solid": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 0
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "dialogue.intro",
+      "startNodeId": "a",
+      "nodes": [
+        {
+          "id": "a",
+          "speaker": "Vera",
+          "text": "The roof gave in a hundred years ago. The rain has been coming down ever since, and the tower has been letting it.",
+          "choices": [],
+          "nextNodeId": "b",
+          "effects": []
+        },
+        {
+          "id": "b",
+          "speaker": "Vera",
+          "text": "Whatever is keeping the light on up there does not know the sky fell.",
+          "choices": [],
+          "nextNodeId": "",
+          "effects": [
+            {
+              "kind": "SetVariable",
+              "targetId": "flag.intro_done",
+              "value": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue.pell",
+      "startNodeId": "a",
+      "nodes": [
+        {
+          "id": "a",
+          "speaker": "Pell",
+          "text": "I sell to anyone who comes down again. That is the whole business plan. Want to look?",
+          "choices": [
+            {
+              "text": "Show me",
+              "nextNodeId": "shop"
+            },
+            {
+              "text": "Not yet",
+              "nextNodeId": "no"
+            }
+          ],
+          "nextNodeId": "",
+          "effects": []
+        },
+        {
+          "id": "shop",
+          "speaker": "Pell",
+          "text": "Take your time. The rain is not going anywhere.",
+          "choices": [],
+          "nextNodeId": "",
+          "effects": []
+        },
+        {
+          "id": "no",
+          "speaker": "Pell",
+          "text": "Then walk carefully. Things down here rust, and things up there do not.",
+          "choices": [],
+          "nextNodeId": "",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "dialogue.warden",
+      "startNodeId": "a",
+      "nodes": [
+        {
+          "id": "a",
+          "speaker": "Crystal Warden",
+          "text": "You climbed here with a lantern.",
+          "choices": [],
+          "nextNodeId": "b",
+          "effects": []
+        },
+        {
+          "id": "b",
+          "speaker": "Crystal Warden",
+          "text": "Down where you come from, light is something you carry. Up here it is something we are.",
+          "choices": [],
+          "nextNodeId": "c",
+          "effects": []
+        },
+        {
+          "id": "c",
+          "speaker": "Vera",
+          "text": "Then let go of it.",
+          "choices": [],
+          "nextNodeId": "",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "dialogue.after",
+      "startNodeId": "a",
+      "nodes": [
+        {
+          "id": "a",
+          "speaker": "Vera",
+          "text": "The tower keeps humming. It did not need a guardian. It needed someone to notice.",
+          "choices": [],
+          "nextNodeId": "",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "dialogue.warden_done",
+      "startNodeId": "a",
+      "nodes": [
+        {
+          "id": "a",
+          "speaker": "",
+          "text": "The vault is quiet. The rain downstairs keeps falling anyway.",
+          "choices": [],
+          "nextNodeId": "",
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "id": "actor.vera",
+      "name": "Vera",
+      "level": 3,
+      "stats": {
+        "hp": 48,
+        "mp": 12,
+        "attack": 13,
+        "defense": 6,
+        "speed": 8
+      },
+      "growth": {
+        "hp": 6,
+        "mp": 2,
+        "attack": 2,
+        "defense": 1,
+        "speed": 1
+      },
+      "skillIds": [
+        "skill.spark",
+        "skill.mend"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "item.potion",
+      "name": "Potion",
+      "price": 10,
+      "effect": "heal:24",
+      "slot": "",
+      "bonus": null,
+      "description": "",
+      "spriteId": ""
+    },
+    {
+      "id": "item.antidote",
+      "name": "Antidote",
+      "price": 8,
+      "effect": "cure:poison",
+      "slot": "",
+      "bonus": null,
+      "description": "",
+      "spriteId": ""
+    },
+    {
+      "id": "item.blade",
+      "name": "Chipped blade",
+      "price": 22,
+      "effect": "",
+      "slot": "weapon",
+      "bonus": {
+        "hp": 0,
+        "mp": 0,
+        "attack": 4,
+        "defense": 0,
+        "speed": 0
+      },
+      "description": "",
+      "spriteId": ""
+    },
+    {
+      "id": "item.cloak",
+      "name": "Damp cloak",
+      "price": 14,
+      "effect": "",
+      "slot": "armor",
+      "bonus": {
+        "hp": 0,
+        "mp": 0,
+        "attack": 0,
+        "defense": 3,
+        "speed": 0
+      },
+      "description": "",
+      "spriteId": ""
+    },
+    {
+      "id": "item.shard",
+      "name": "Heart of the Tower",
+      "price": 0,
+      "effect": "",
+      "slot": "",
+      "bonus": null,
+      "description": "It kept beating after the Warden stopped.",
+      "spriteId": "sprite.shard"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "enemy.crawler",
+      "name": "Rust Crawler",
+      "stats": {
+        "hp": 20,
+        "mp": 0,
+        "attack": 8,
+        "defense": 3,
+        "speed": 5
+      },
+      "exp": 10,
+      "money": 12,
+      "inflicts": "poison"
+    },
+    {
+      "id": "enemy.wisp",
+      "name": "Mire Wisp",
+      "stats": {
+        "hp": 26,
+        "mp": 0,
+        "attack": 9,
+        "defense": 4,
+        "speed": 9
+      },
+      "exp": 14,
+      "money": 16,
+      "inflicts": "sleep"
+    },
+    {
+      "id": "enemy.warden",
+      "name": "Crystal Warden",
+      "stats": {
+        "hp": 58,
+        "mp": 0,
+        "attack": 11,
+        "defense": 6,
+        "speed": 7
+      },
+      "exp": 40,
+      "money": 45,
+      "inflicts": ""
+    }
+  ],
+  "battles": [
+    {
+      "id": "battle.crawler",
+      "view": "Frontal",
+      "rollingHp": true,
+      "enemyIds": [
+        "enemy.crawler"
+      ],
+      "victoryFlag": "flag.crawler_beaten",
+      "damageFormula": "max(1, attack - defense)",
+      "songId": "song.boss",
+      "boss": false,
+      "backgroundVfxId": "vfx.cave_bg"
+    },
+    {
+      "id": "battle.wisp",
+      "view": "Frontal",
+      "rollingHp": true,
+      "enemyIds": [
+        "enemy.wisp"
+      ],
+      "victoryFlag": "flag.wisp_beaten",
+      "damageFormula": "max(1, attack - defense)",
+      "songId": "song.boss",
+      "boss": false,
+      "backgroundVfxId": "vfx.cave_bg"
+    },
+    {
+      "id": "battle.warden",
+      "view": "Frontal",
+      "rollingHp": true,
+      "enemyIds": [
+        "enemy.warden"
+      ],
+      "victoryFlag": "flag.warden_beaten",
+      "damageFormula": "max(1, attack - defense)",
+      "songId": "song.boss",
+      "boss": true,
+      "backgroundVfxId": "vfx.vault_bg"
+    }
+  ],
+  "shops": [
+    {
+      "id": "shop.pell",
+      "name": "Pell\u0027s landing",
+      "itemIds": [
+        "item.potion",
+        "item.antidote",
+        "item.blade",
+        "item.cloak"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.spark",
+      "name": "Spark",
+      "mpCost": 3,
+      "power": 9,
+      "kind": "damage",
+      "status": "",
+      "vfxId": "vfx.shatter"
+    },
+    {
+      "id": "skill.mend",
+      "name": "Mend",
+      "mpCost": 4,
+      "power": 18,
+      "kind": "heal",
+      "status": "",
+      "vfxId": ""
+    }
+  ],
+  "songs": [
+    {
+      "id": "song.tower",
+      "tempo": 88,
+      "channels": [
+        {
+          "wave": "triangle",
+          "notes": [
+            "A2:4",
+            "E2:4",
+            "F2:4",
+            "C2:4",
+            "D2:4",
+            "A2:4",
+            "E2:4",
+            "E2:4"
+          ],
+          "volume": 0.85,
+          "attackMs": 10,
+          "releaseMs": 340,
+          "duty": 0.5
+        },
+        {
+          "wave": "square",
+          "notes": [
+            "A4:2",
+            "R:2",
+            "C5:2",
+            "R:2",
+            "B4:2",
+            "R:2",
+            "E4:4",
+            "R:4",
+            "G4:2",
+            "R:2",
+            "A4:4"
+          ],
+          "volume": 0.45,
+          "attackMs": 10,
+          "releaseMs": 140,
+          "duty": 0.125
+        },
+        {
+          "wave": "noise",
+          "notes": [
+            "R:7",
+            "C6",
+            "R:7",
+            "C6"
+          ],
+          "volume": 0.16,
+          "attackMs": 3,
+          "releaseMs": 45,
+          "duty": 0.5
+        }
+      ]
+    },
+    {
+      "id": "song.boss",
+      "tempo": 176,
+      "channels": [
+        {
+          "wave": "square",
+          "notes": [
+            "A4",
+            "A4",
+            "C5",
+            "E5",
+            "D5",
+            "C5",
+            "B4",
+            "G4",
+            "A4",
+            "A4",
+            "E5",
+            "G5",
+            "F5:2",
+            "E5:2"
+          ],
+          "volume": 0.95,
+          "attackMs": 10,
+          "releaseMs": 28,
+          "duty": 0.125
+        },
+        {
+          "wave": "square",
+          "notes": [
+            "E5:2",
+            "R:2",
+            "D5:2",
+            "R:2",
+            "C5:2",
+            "R:2",
+            "B4:2",
+            "R:2"
+          ],
+          "volume": 0.4,
+          "attackMs": 10,
+          "releaseMs": 40,
+          "duty": 0.5
+        },
+        {
+          "wave": "triangle",
+          "notes": [
+            "A2:2",
+            "A2:2",
+            "G2:2",
+            "G2:2",
+            "F2:2",
+            "F2:2",
+            "E2:2",
+            "E2:2"
+          ],
+          "volume": 0.9,
+          "attackMs": 10,
+          "releaseMs": 45,
+          "duty": 0.5
+        },
+        {
+          "wave": "noise",
+          "notes": [
+            "C6",
+            "C5",
+            "C6",
+            "C5",
+            "C6",
+            "C5",
+            "C6",
+            "C5",
+            "C6",
+            "C5",
+            "C6",
+            "C5",
+            "C6",
+            "C5",
+            "C6",
+            "C5"
+          ],
+          "volume": 0.42,
+          "attackMs": 2,
+          "releaseMs": 18,
+          "duty": 0.5
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "sprite.hero",
+      "name": "Vera",
+      "width": 16,
+      "height": 16,
+      "palette": [
+        "#14141c",
+        "#e8c49a",
+        "#3a2a3e",
+        "#4a6ea8",
+        "#2e3f66",
+        "#c9b45a"
+      ],
+      "poses": [
+        {
+          "direction": "Down",
+          "frames": [
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0210110120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440.0440...",
+                "....000..000...."
+              ]
+            },
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0210110120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440..0440..",
+                "...000.....000.."
+              ]
+            }
+          ]
+        },
+        {
+          "direction": "Right",
+          "frames": [
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0211010120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440.0440...",
+                "....000..000...."
+              ]
+            },
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0211010120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "...0440...0440..",
+                "...000....000..."
+              ]
+            }
+          ]
+        },
+        {
+          "direction": "Up",
+          "frames": [
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0222222220...",
+                "...0222222220...",
+                "...0222222220...",
+                "....02222220....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440.0440...",
+                "....000..000...."
+              ]
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "sheetFramesPerDirection": 2
+    },
+    {
+      "id": "sprite.merchant",
+      "name": "Pell",
+      "width": 16,
+      "height": 16,
+      "palette": [
+        "#14141c",
+        "#d8b088",
+        "#5c4a2e",
+        "#7e3540",
+        "#4a2028",
+        "#c9b45a"
+      ],
+      "poses": [
+        {
+          "direction": "Down",
+          "frames": [
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0210110120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440.0440...",
+                "....000..000...."
+              ]
+            },
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0210110120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440..0440..",
+                "...000.....000.."
+              ]
+            }
+          ]
+        },
+        {
+          "direction": "Right",
+          "frames": [
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0211010120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440.0440...",
+                "....000..000...."
+              ]
+            },
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0211111120...",
+                "...0211010120...",
+                "...0211111120...",
+                "....01111110....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "...0440...0440..",
+                "...000....000..."
+              ]
+            }
+          ]
+        },
+        {
+          "direction": "Up",
+          "frames": [
+            {
+              "rows": [
+                "....00000000....",
+                "...0222222220...",
+                "...0222222220...",
+                "...0222222220...",
+                "...0222222220...",
+                "...0222222220...",
+                "....02222220....",
+                ".....000000.....",
+                "....03333330....",
+                "...0333333330...",
+                "...0133333310...",
+                "....03333330....",
+                "....04444440....",
+                "....0440.0440...",
+                "....0440.0440...",
+                "....000..000...."
+              ]
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "sheetFramesPerDirection": 2
+    },
+    {
+      "id": "sprite.crawler",
+      "name": "Rust Crawler",
+      "width": 16,
+      "height": 16,
+      "palette": [
+        "#14141c",
+        "#8a6a3a",
+        "#5c4020",
+        "#3a2a18",
+        "#2a1e12",
+        "#c9b45a"
+      ],
+      "poses": [
+        {
+          "direction": "Down",
+          "frames": [
+            {
+              "rows": [
+                ".....0....0.....",
+                "....050..050....",
+                ".....000000.....",
+                "....02222220....",
+                "...0221111220...",
+                "..022111111220..",
+                "..022111311220..",
+                "..022111331220..",
+                "..022111111220..",
+                "...0221111220...",
+                "....02222220....",
+                ".....000000.....",
+                "....04....04....",
+                "...04......04...",
+                "................",
+                "................"
+              ]
+            },
+            {
+              "rows": [
+                ".....0....0.....",
+                "....050..050....",
+                ".....000000.....",
+                "....02222220....",
+                "...0221111220...",
+                "..022111111220..",
+                "..022111311220..",
+                "..022111331220..",
+                "..022111111220..",
+                "...0221111220...",
+                "....02222220....",
+                ".....000000.....",
+                "...04......04...",
+                "....04....04....",
+                "................",
+                "................"
+              ]
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "sheetFramesPerDirection": 2
+    },
+    {
+      "id": "sprite.wisp",
+      "name": "Mire Wisp",
+      "width": 16,
+      "height": 16,
+      "palette": [
+        "#14141c",
+        "#a8c4ff",
+        "#5a7fd8",
+        "#2f4a97",
+        "#1b2a55",
+        "#dfe9ff"
+      ],
+      "poses": [
+        {
+          "direction": "Down",
+          "frames": [
+            {
+              "rows": [
+                "................",
+                ".......05.......",
+                "......0510......",
+                "......0510......",
+                ".....051110.....",
+                ".....051110.....",
+                "....05111310....",
+                "....05111310....",
+                "....03111310....",
+                "....03111310....",
+                ".....0313.0.....",
+                ".....031310.....",
+                "......0330......",
+                "......0330......",
+                ".......00.......",
+                "................"
+              ]
+            },
+            {
+              "rows": [
+                "................",
+                ".......05.......",
+                "......0510......",
+                "......0510......",
+                ".....051110.....",
+                ".....051110.....",
+                "....05111310....",
+                "....05111310....",
+                "....03111310....",
+                "....03111310....",
+                ".....0313.0.....",
+                ".....031310.....",
+                "......0330......",
+                "......0330......",
+                ".......00.......",
+                "................"
+              ]
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "sheetFramesPerDirection": 2
+    },
+    {
+      "id": "sprite.warden",
+      "name": "Crystal Warden",
+      "width": 24,
+      "height": 24,
+      "palette": [
+        "#0d0f16",
+        "#a8c4ff",
+        "#5a7fd8",
+        "#2f4a97",
+        "#1b2a55",
+        "#dfe9ff"
+      ],
+      "poses": [
+        {
+          "direction": "Down",
+          "frames": [
+            {
+              "rows": [
+                ".........000000.........",
+                "........05555550........",
+                ".......0511111150.......",
+                "......051111111150......",
+                ".....05111111111150.....",
+                ".....03111111111130.....",
+                "....0311102211013110....",
+                "....0311102211013110....",
+                "....0331111111111330....",
+                ".....03311111113310.....",
+                "......033111111330......",
+                ".....0033322233300......",
+                "....03222222222222.30...",
+                "...0322222222222223.0...",
+                "..032222444442222230....",
+                "..032224444444222230....",
+                "..032244444444422230....",
+                "..032244444444422230....",
+                "...03224444444422300....",
+                "....0322244442230.......",
+                ".....03222222230........",
+                "......033333330.........",
+                ".......0000000..........",
+                "........................"
+              ]
+            },
+            {
+              "rows": [
+                ".........000000.........",
+                "........05555550........",
+                ".......0511111150.......",
+                "......051111111150......",
+                ".....05111111111150.....",
+                ".....03111111111130.....",
+                "....0311022110213110....",
+                "....0311022110213110....",
+                "....0331111111111330....",
+                ".....03311111113310.....",
+                "......033111111330......",
+                ".....0033322233300......",
+                "...03222222222222.30....",
+                "...0322222222222223.0...",
+                "..032222444442222230....",
+                "..032244444444422230....",
+                "..032244444444422230....",
+                "..032244444444422230....",
+                "...03224444444422300....",
+                "....0322244442230.......",
+                ".....03222222230........",
+                "......033333330.........",
+                ".......0000000..........",
+                "........................"
+              ]
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "sheetFramesPerDirection": 2
+    },
+    {
+      "id": "sprite.shard",
+      "name": "Heart of the Tower",
+      "width": 16,
+      "height": 16,
+      "palette": [
+        "#0d0f16",
+        "#a8c4ff",
+        "#5a7fd8",
+        "#2f4a97",
+        "#1b2a55",
+        "#dfe9ff"
+      ],
+      "poses": [
+        {
+          "direction": "Down",
+          "frames": [
+            {
+              "rows": [
+                "................",
+                ".......05.......",
+                "......0510......",
+                "......0510......",
+                ".....051110.....",
+                ".....051110.....",
+                "....05111310....",
+                "....05111310....",
+                "....03111310....",
+                "....03111310....",
+                ".....0313.0.....",
+                ".....031310.....",
+                "......0330......",
+                "......0330......",
+                ".......00.......",
+                "................"
+              ]
+            },
+            {
+              "rows": [
+                "................",
+                ".......05.......",
+                "......0510......",
+                "......0510......",
+                ".....051110.....",
+                ".....051110.....",
+                "....05111310....",
+                "....05111310....",
+                "....03111310....",
+                "....03111310....",
+                ".....0313.0.....",
+                ".....031310.....",
+                "......0330......",
+                "......0330......",
+                ".......00.......",
+                "................"
+              ]
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "sheetFramesPerDirection": 2
+    }
+  ],
+  "uiThemes": [],
+  "sfx": [
+    {
+      "id": "sfx.alerta",
+      "wave": "square",
+      "startFreq": 350,
+      "endFreq": 950,
+      "durationMs": 160,
+      "decay": 0.5,
+      "volume": 0.5,
+      "duty": 0.35
+    },
+    {
+      "id": "sfx.text_blip",
+      "wave": "square",
+      "startFreq": 880,
+      "endFreq": 660,
+      "durationMs": 38,
+      "decay": 0.9,
+      "volume": 0.32,
+      "duty": 0.5
+    }
+  ],
+  "vfx": [
+    {
+      "id": "vfx.rain",
+      "kind": "weather",
+      "durationMs": 0,
+      "sfxId": "",
+      "layers": [
+        {
+          "shape": "rain",
+          "pattern": "",
+          "color": "#d6e8fa",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 140,
+          "spreadPx": 24,
+          "sizePx": 7,
+          "angle": 14,
+          "scrollX": 0,
+          "scrollY": 118,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        },
+        {
+          "shape": "rain",
+          "pattern": "",
+          "color": "#8fb4d6",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 90,
+          "spreadPx": 24,
+          "sizePx": 5,
+          "angle": 11,
+          "scrollX": 0,
+          "scrollY": 76,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        },
+        {
+          "shape": "splash",
+          "pattern": "",
+          "color": "#d6e8fa",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 36,
+          "spreadPx": 24,
+          "sizePx": 0,
+          "angle": 45,
+          "scrollX": 0,
+          "scrollY": 0,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        }
+      ]
+    },
+    {
+      "id": "vfx.vault_mist",
+      "kind": "weather",
+      "durationMs": 0,
+      "sfxId": "",
+      "layers": [
+        {
+          "shape": "fog",
+          "pattern": "",
+          "color": "#4a6a8c",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 5,
+          "spreadPx": 72,
+          "sizePx": 0,
+          "angle": 45,
+          "scrollX": 7,
+          "scrollY": 0,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        },
+        {
+          "shape": "fog",
+          "pattern": "",
+          "color": "#2c3f5c",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 3,
+          "spreadPx": 112,
+          "sizePx": 0,
+          "angle": 45,
+          "scrollX": -4,
+          "scrollY": 0,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        }
+      ]
+    },
+    {
+      "id": "vfx.vault_bg",
+      "kind": "background",
+      "durationMs": 600,
+      "sfxId": "",
+      "layers": [
+        {
+          "shape": "spark",
+          "pattern": "bands",
+          "color": "#FFFFFF",
+          "colors": [
+            "#0d1626",
+            "#132140",
+            "#1b2f5c",
+            "#132140"
+          ],
+          "motion": "burst",
+          "blend": "normal",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 8,
+          "spreadPx": 24,
+          "sizePx": 14,
+          "angle": 45,
+          "scrollX": 0,
+          "scrollY": 9,
+          "distortAmp": 10,
+          "distortFreq": 0.09,
+          "distortSpeed": 1.5,
+          "cycleMs": 420
+        },
+        {
+          "shape": "spark",
+          "pattern": "rings",
+          "color": "#FFFFFF",
+          "colors": [
+            "#2f4a97",
+            "#1b2a55"
+          ],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 8,
+          "spreadPx": 24,
+          "sizePx": 22,
+          "angle": 45,
+          "scrollX": 0,
+          "scrollY": -5,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 900
+        }
+      ]
+    },
+    {
+      "id": "vfx.cave_bg",
+      "kind": "background",
+      "durationMs": 600,
+      "sfxId": "",
+      "layers": [
+        {
+          "shape": "spark",
+          "pattern": "waves",
+          "color": "#FFFFFF",
+          "colors": [
+            "#161822",
+            "#23232f",
+            "#31313f"
+          ],
+          "motion": "burst",
+          "blend": "normal",
+          "startMs": 0,
+          "endMs": 0,
+          "count": 8,
+          "spreadPx": 24,
+          "sizePx": 18,
+          "angle": 45,
+          "scrollX": 11,
+          "scrollY": 0,
+          "distortAmp": 7,
+          "distortFreq": 0.11,
+          "distortSpeed": 1.5,
+          "cycleMs": 600
+        }
+      ]
+    },
+    {
+      "id": "vfx.shatter",
+      "kind": "impact",
+      "durationMs": 640,
+      "sfxId": "sfx.hit",
+      "layers": [
+        {
+          "shape": "flash",
+          "pattern": "",
+          "color": "#a8c4ff",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 0,
+          "endMs": 120,
+          "count": 8,
+          "spreadPx": 24,
+          "sizePx": 0,
+          "angle": 45,
+          "scrollX": 0,
+          "scrollY": 0,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        },
+        {
+          "shape": "slash",
+          "pattern": "",
+          "color": "#dfe9ff",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 40,
+          "endMs": 330,
+          "count": 8,
+          "spreadPx": 32,
+          "sizePx": 0,
+          "angle": 55,
+          "scrollX": 0,
+          "scrollY": 0,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        },
+        {
+          "shape": "spark",
+          "pattern": "",
+          "color": "#5a7fd8",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 60,
+          "endMs": 640,
+          "count": 16,
+          "spreadPx": 36,
+          "sizePx": 0,
+          "angle": 45,
+          "scrollX": 0,
+          "scrollY": 0,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        },
+        {
+          "shape": "ring",
+          "pattern": "",
+          "color": "#a8c4ff",
+          "colors": [],
+          "motion": "burst",
+          "blend": "additive",
+          "startMs": 90,
+          "endMs": 540,
+          "count": 8,
+          "spreadPx": 44,
+          "sizePx": 0,
+          "angle": 45,
+          "scrollX": 0,
+          "scrollY": 0,
+          "distortAmp": 0,
+          "distortFreq": 0.06,
+          "distortSpeed": 1.5,
+          "cycleMs": 0
+        }
+      ]
+    }
+  ],
+  "fonts": [],
+  "qualityPlan": {
+    "enforceOnPack": false,
+    "runPlaytestsOnPack": false,
+    "auditAllScenes": true,
+    "canonicalRouteId": "",
+    "encounters": [],
+    "routes": []
+  },
+  "storyBook": {
+    "title": "90s Demo",
+    "subtitle": "",
+    "author": "SETO DEV",
+    "shortTitle": "",
+    "language": "en",
+    "contact": "",
+    "pageSize": "letter",
+    "description": "",
+    "chapters": [
+      {
+        "id": "chapter.tower",
+        "title": "Two floors of a hundred",
+        "summary": "",
+        "scenes": [
+          {
+            "id": "scene.gallery",
+            "title": "The rain got in first",
+            "synopsis": "Vera enters the flooded gallery, meets the only merchant who still comes down, and learns the tower is inhabited.",
+            "pov": "Vera / third limited",
+            "location": "The Flooded Gallery",
+            "time": "no hour indoors",
+            "status": "draft",
+            "prose": "The rain did not fall through the roof so much as live there. It had had a century to learn the shape of the room, and it had learned it well: the same three puddles, the same patient sound.\n\nPell had a landing, a crate and a business plan that fit in one sentence. Vera bought what she could carry and did not ask what he had seen come back down.",
+            "tags": [],
+            "links": [
+              {
+                "kind": "map",
+                "id": "map.gallery",
+                "role": "setting"
+              },
+              {
+                "kind": "event",
+                "id": "event.pell",
+                "role": "source"
+              },
+              {
+                "kind": "dialogue",
+                "id": "dialogue.intro",
+                "role": "source"
+              }
+            ],
+            "canonChoices": [],
+            "syncedGameHash": "",
+            "syncedProseHash": ""
+          },
+          {
+            "id": "scene.vault",
+            "title": "Something that is light",
+            "synopsis": "At the top of the second floor the Warden explains the difference between carrying light and being it. Vera answers with a blade.",
+            "pov": "Vera / third limited",
+            "location": "The Crystal Vault",
+            "time": "after the climb",
+            "status": "draft",
+            "prose": "Up here the mist did not drift; it waited. The seams in the wall held a blue that had never been lit by anything.\n\nThe Warden spoke the way old things do, as if the sentence had been ready for a long time. Vera understood the argument and refused it anyway, and afterwards the tower kept humming, which she took to mean she had not put a light out. She had taken one.",
+            "tags": [],
+            "links": [
+              {
+                "kind": "map",
+                "id": "map.vault",
+                "role": "setting"
+              },
+              {
+                "kind": "event",
+                "id": "event.warden",
+                "role": "source"
+              },
+              {
+                "kind": "dialogue",
+                "id": "dialogue.warden",
+                "role": "source"
+              },
+              {
+                "kind": "battle",
+                "id": "battle.warden",
+                "role": "outcome"
+              }
+            ],
+            "canonChoices": [],
+            "syncedGameHash": "",
+            "syncedProseHash": ""
+          }
+        ]
+      }
+    ]
+  },
+  "embeddedFiles": {}
+}

@@ -1,0 +1,22 @@
+# Build de .NET
+bin/
+obj/
+*.user
+
+# Artefactos regenerables del contenido (pack, capturas, export de assets y del libro)
+**/build/
+
+# Distribucion publicada (se regenera con publish)
+**/dist/
+
+# Config local de cliente MCP: tiene rutas absolutas de la maquina del autor
+.mcp.json
+
+# Backup del guardado atomico de project.json
+*.bak
+
+# Editores / SO
+.vs/
+.idea/
+*.suo
+.DS_Store

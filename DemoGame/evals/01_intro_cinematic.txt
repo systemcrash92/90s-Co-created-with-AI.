@@ -1,0 +1,6 @@
+# The opening cinematic fires once and sets its flag.
+# Covers: trigger on arrival, emote, two camera pans, two-node dialogue.
+assert-map map.gallery
+move up
+auto
+assert-flag flag.intro_done true

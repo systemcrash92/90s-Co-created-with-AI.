@@ -1,0 +1,11 @@
+# The stairs reach the second floor and the Warden can be beaten.
+# Covers: spiral warp, boss cinematic, boss battle, key-item ceremony, reward.
+goto map.gallery 10,2
+move up
+wait 2
+assert-map map.vault
+goto map.vault 10,5
+move up
+auto
+assert-flag flag.warden_beaten true
+assert-item item.shard
